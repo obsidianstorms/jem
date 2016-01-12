@@ -104,10 +104,10 @@
 
 /* Microphone */
 #sym_microphone div {
-    background: #000;
+
     border-color: #000;
 }
-.mic {
+.mic {background: #000;
     border-radius: 15px;
     width: 15px;
     height: 25px;
@@ -117,21 +117,21 @@
     /*height: 15px;
     width: 3px;
     transform: skew(-45deg);*/
-    border-width: 0 5px 5px 5px;
+    border-width: 0 3px 3px 3px;
     border-style: solid;
-    background: none;
     border-radius: 0 0 16px 16px;
     width: 21px;
     height: 7px;
     margin-top: -5px;
+    margin-left: 2px;
 }
-.pole {
+.pole {background: #000;
     height: 5px;
     width: 3px;
-    margin-left: 15px;
+    margin-left: 14px;
 }
-.foot {
+.foot {background: #000;
     height: 3px;
     width: 15px;
-    margin-left: 9px;
+    margin-left: 8px;
 }
