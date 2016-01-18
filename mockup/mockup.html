@@ -10,10 +10,14 @@
 
     <link rel="stylesheet" href="css/styles.css?v=1.0">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/mustache.js"></script>
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script src="js/scripts.js"></script>
+     <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript">
+    </script>
 </head>
 
 <body>
@@ -22,191 +26,170 @@
     <div id="phone">
         <div id="face">
             <div id="window_base">
+                <div id="window_1">
+                    <div class="window_content">
 
+                    </div>
+                </div>
+                <div id="window_2">
+                    <div class="window_content">
+
+                    </div>
+                    <div id="keyboard">
+                        <div id="keyboard_r1" class="keyrow">
+                            <div id="button_q" class="button letter">
+                                <span id="1" class="alt">1</span>
+                                <span id="q" class="main">q</span>
+                            </div>
+                            <div id="button_w" class="button letter">
+                                <span id="2" class="alt">2</span>
+                                <span id="w" class="main">w</span>
+                            </div>
+                            <div id="button_e" class="button letter">
+                                <span id="3" class="alt">3</span>
+                                <span id="e" class="main">e</span>
+                            </div>
+                            <div id="button_r" class="button letter">
+                                <span id="4" class="alt">4</span>
+                                <span id="r" class="main">r</span>
+                            </div>
+                            <div id="button_t" class="button letter">
+                                <span id="5" class="alt">5</span>
+                                <span id="t" class="main">t</span>
+                            </div>
+                            <div id="button_y" class="button letter">
+                                <span id="6" class="alt">6</span>
+                                <span id="y" class="main">y</span>
+                            </div>
+                            <div id="button_u" class="button letter">
+                                <span id="7" class="alt">7</span>
+                                <span id="u" class="main">u</span>
+                            </div>
+                            <div id="button_i" class="button letter">
+                                <span id="8" class="alt">8</span>
+                                <span id="i" class="main">i</span>
+                            </div>
+                            <div id="button_o" class="button letter">
+                                <span id="9" class="alt">9</span>
+                                <span id="o" class="main">o</span>
+                            </div>
+                            <div id="button_p" class="button letter">
+                                <span id="0" class="alt">0</span>
+                                <span id="p" class="main">p</span>
+                            </div>
+                        </div>
+                        <div id="keyboard_r2" class="keyrow">
+                            <div id="button_a" class="button letter">
+                                <span id="sym_at" class="alt">&#64</span>
+                                <span id="a" class="main">a</span>
+                            </div>
+                            <div id="button_s" class="button letter">
+                                <span id="sym_hash" class="alt">&#35</span>
+                                <span id="s" class="main">s</span>
+                            </div>
+                            <div id="button_d" class="button letter">
+                                <span id="sym_dollar" class="alt">&#36</span>
+                                <span id="d" class="main">d</span>
+                            </div>
+                            <div id="button_f" class="button letter">
+                                <span id="sym_ampersand" class="alt">&#38</span>
+                                <span id="f" class="main">f</span>
+                            </div>
+                            <div id="button_g" class="button letter">
+                                <span id="sym_asterisk" class="alt">&#42</span>
+                                <span id="g" class="main">g</span>
+                            </div>
+                            <div id="button_h" class="button letter">
+                                <span id="sym_minus" class="alt">&#45</span>
+                                <span id="h" class="main">h</span>
+                            </div>
+                            <div id="button_j" class="button letter">
+                                <span id="sym_plus" class="alt">&#43</span>
+                                <span id="j" class="main">j</span>
+                            </div>
+                            <div id="button_k" class="button letter">
+                                <span id="sym_parenthopen" class="alt">&#40</span>
+                                <span id="k" class="main">k</span>
+                            </div>
+                            <div id="button_l" class="button letter">
+                                <span id="sym_parenthclose" class="alt">&#41</span>
+                                <span id="l" class="main">l</span>
+                            </div>
+                        </div>
+                        <div id="keyboard_r3" class="keyrow">
+                            <div id="button_up" class="button control arrow">
+                                <span id="control_up" class="main">&#8593</span>
+                            </div>
+                            <div id="button_z" class="button letter">
+                                <span id="sym_bang" class="alt">&#33</span>
+                                <span id="z" class="main">z</span>
+                            </div>
+                            <div id="button_x" class="button letter">
+                                <span id="sym_dblqt" class="alt">&#34</span>
+                                <span id="x" class="main">x</span>
+                            </div>
+                            <div id="button_c" class="button letter">
+                                <span id="sym_sglqt" class="alt">&#39</span>
+                                <span id="c" class="main">c</span>
+                            </div>
+                            <div id="button_v" class="button letter">
+                                <span id="sym_colon" class="alt">&#58</span>
+                                <span id="v" class="main">v</span>
+                            </div>
+                            <div id="button_b" class="button letter">
+                                <span id="sym_semicolon" class="alt">&#59</span>
+                                <span id="b" class="main">b</span>
+                            </div>
+                            <div id="button_n" class="button letter">
+                                <span id="sym_fslash" class="alt">&#47</span>
+                                <span id="n" class="main">n</span>
+                            </div>
+                            <div id="button_m" class="button letter">
+                                <span id="sym_question" class="alt">&#63</span>
+                                <span id="m" class="main">m</span>
+                            </div>
+                            <div id="button_back" class="button control arrow">
+                                <span id="control_back" class="main">&#8592</span>
+                            </div>
+                        </div>
+                        <div id="keyboard_r4" class="keyrow">
+                            <div id="button_sym" class="button control">
+                                <span id="control_sym" class="main">&#63&#49&#50&#51</span>
+                            </div>
+                            <div id="button_mic" class="button control">
+                                <!--span id="control_mic" class="main">&#127908</span-->
+                                <div id="sym_microphone">
+                                    <div class="mic">
+                                    </div>
+                                    <div class="cradle">
+                                    </div>
+                                    <div class="pole">
+                                    </div>
+                                    <div class="foot">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="button_space" class="button letter">
+                                <span id="sym_space" class="main">&#9141</span>
+                            </div>
+                            <div id="button_period" class="button letter">
+                                <span id="sym_comma" class="alt">&#44</span>
+                                <span id="sym_period" class="main">&#46</span>
+                            </div>
+                            <div id="button_return" class="button control arrow">
+                                <span id="control_return" class="main">&#8629</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 </div>
-<div id="sym_microphone">
-    <div class="mic">
-    </div>
-    <div class="cradle">
-    </div>
-    <div class="pole">
-    </div>
-    <div class="foot">
-    </div>
-
-</div>
-
 <div id="toolbox">
-    <div id="input_field_wrap">
-        <div>
-            <label for="input_wrap">Label</label>
-        </div>
-        <div>
-            <input id="input_wrap" class="standard" />
-        </div>
-    </div>
-    <div id="input_field_line">
-        <label for="input_line">Label</label>
-        <input id="input_line" class="standard" />
-    </div>
-    <div id="input_area_wrap">
-        <div>
-            <label for="area_wrap">Label</label>
-        </div>
-        <div>
-            <textarea id="area_wrap" class="standard"></textarea>
-        </div>
-    </div>
-    <div id="radio_field_line_opt_1">
-        <input id="input_radio_1" name="radio_1" type="radio" value="1"/>
-        <label for="input_radio_1">Label</label>
-    </div>
-    <div id="radio_field_line_opt_2">
-        <label for="input_radio_2">Label</label>
-        <input id="input_radio_2" name="radio_2" type="radio" value="2"/>
-    </div>
-    <div id="keyboard">
-        <div id="keyboard_r1" class="keyrow">
-            <div id="button_q" class="button letter">
-                <span id="1" class="alt">1</span>
-                <span id="q" class="main">q</span>
-            </div>
-            <div id="button_w" class="button letter">
-                <span id="2" class="alt">2</span>
-                <span id="w" class="main">w</span>
-            </div>
-            <div id="button_e" class="button letter">
-                <span id="3" class="alt">3</span>
-                <span id="e" class="main">e</span>
-            </div>
-            <div id="button_r" class="button letter">
-                <span id="4" class="alt">4</span>
-                <span id="r" class="main">r</span>
-            </div>
-            <div id="button_t" class="button letter">
-                <span id="5" class="alt">5</span>
-                <span id="t" class="main">t</span>
-            </div>
-            <div id="button_y" class="button letter">
-                <span id="6" class="alt">6</span>
-                <span id="y" class="main">y</span>
-            </div>
-            <div id="button_u" class="button letter">
-                <span id="7" class="alt">7</span>
-                <span id="u" class="main">u</span>
-            </div>
-            <div id="button_i" class="button letter">
-                <span id="8" class="alt">8</span>
-                <span id="i" class="main">i</span>
-            </div>
-            <div id="button_o" class="button letter">
-                <span id="9" class="alt">9</span>
-                <span id="o" class="main">o</span>
-            </div>
-            <div id="button_p" class="button letter">
-                <span id="0" class="alt">0</span>
-                <span id="p" class="main">p</span>
-            </div>
-        </div>
-        <div id="keyboard_r2" class="keyrow">
-            <div id="button_a" class="button letter">
-                <span id="sym_at" class="alt">&#64</span>
-                <span id="a" class="main">a</span>
-            </div>
-            <div id="button_s" class="button letter">
-                <span id="sym_hash" class="alt">&#35</span>
-                <span id="s" class="main">s</span>
-            </div>
-            <div id="button_d" class="button letter">
-                <span id="sym_dollar" class="alt">&#36</span>
-                <span id="d" class="main">d</span>
-            </div>
-            <div id="button_f" class="button letter">
-                <span id="sym_ampersand" class="alt">&#38</span>
-                <span id="f" class="main">f</span>
-            </div>
-            <div id="button_g" class="button letter">
-                <span id="sym_asterisk" class="alt">&#42</span>
-                <span id="g" class="main">g</span>
-            </div>
-            <div id="button_h" class="button letter">
-                <span id="sym_minus" class="alt">&#45</span>
-                <span id="h" class="main">h</span>
-            </div>
-            <div id="button_j" class="button letter">
-                <span id="sym_plus" class="alt">&#43</span>
-                <span id="j" class="main">j</span>
-            </div>
-            <div id="button_k" class="button letter">
-                <span id="sym_parenthopen" class="alt">&#40</span>
-                <span id="k" class="main">k</span>
-            </div>
-            <div id="button_l" class="button letter">
-                <span id="sym_parenthclose" class="alt">&#41</span>
-                <span id="l" class="main">l</span>
-            </div>
-        </div>
-        <div id="keyboard_r3" class="keyrow">
-            <div id="button_up" class="button control arrow">
-                <span id="control_up" class="main">&#8593</span>
-            </div>
-            <div id="button_z" class="button letter">
-                <span id="sym_bang" class="alt">&#33</span>
-                <span id="z" class="main">z</span>
-            </div>
-            <div id="button_x" class="button letter">
-                <span id="sym_dblqt" class="alt">&#34</span>
-                <span id="x" class="main">x</span>
-            </div>
-            <div id="button_c" class="button letter">
-                <span id="sym_sglqt" class="alt">&#39</span>
-                <span id="c" class="main">c</span>
-            </div>
-            <div id="button_v" class="button letter">
-                <span id="sym_colon" class="alt">&#58</span>
-                <span id="v" class="main">v</span>
-            </div>
-            <div id="button_b" class="button letter">
-                <span id="sym_semicolon" class="alt">&#59</span>
-                <span id="b" class="main">b</span>
-            </div>
-            <div id="button_n" class="button letter">
-                <span id="sym_fslash" class="alt">&#47</span>
-                <span id="n" class="main">n</span>
-            </div>
-            <div id="button_m" class="button letter">
-                <span id="sym_question" class="alt">&#63</span>
-                <span id="m" class="main">m</span>
-            </div>
-            <div id="button_back" class="button control arrow">
-                <span id="control_back" class="main">&#8592</span>
-            </div>
-        </div>
-        <div id="keyboard_r4" class="keyrow">
-            <div id="button_sym" class="button control">
-                <span id="control_sym" class="main">&#63 123</span>
-            </div>
-            <div id="button_mic" class="button control">
-                <span id="control_mic" class="main">&#127908</span>
-            </div>
-            <div id="button_space" class="button letter">
-                <span id="sym_space" class="main">&#9141</span>
-            </div>
-            <div id="button_period" class="button letter">
-                <span id="sym_comma" class="alt">&#44</span>
-                <span id="sym_period" class="main">&#46</span>
-            </div>
-            <div id="button_return" class="button control arrow">
-                <span id="control_return" class="main">&#8629</span>
-            </div>
-        </div>
-    </div>
-    <div id="button_glass" class="button control">
-        <span id="control_glass" class="main">&#8981</span>
-    </div>
+
 </div>
 </body>
 </html>
